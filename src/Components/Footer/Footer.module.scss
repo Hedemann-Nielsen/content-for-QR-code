@@ -1,8 +1,10 @@
+@use "../../Styles/Helpers/variables" as *;
+
 .footer {
 	margin: 50px;
 	text-align: center;
 	a {
-		color: black;
+		color: $color-black;
 		&:hover {
 			text-decoration: underline;
 		}

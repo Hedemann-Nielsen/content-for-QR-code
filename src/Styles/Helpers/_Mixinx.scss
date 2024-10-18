@@ -3,14 +3,14 @@
 	font-size: 20px;
 	font-weight: 700;
 	font-family: "Lato", serif;
-	color: #333;
+	color: $color-gray;
 	text-align: center;
 }
 
 @mixin subtitle {
 	font-size: 14px;
 	font-family: "Lato", serif;
-	color: #333;
+	color: $color-gray;
 	font-weight: 400;
 	text-align: center;
 }
@@ -18,7 +18,7 @@
 @mixin text {
 	font-size: 12px;
 	font-family: "Lato", serif;
-	color: #333;
+	color: $color-gray;
 	font-weight: 400;
 	text-align: center;
 }

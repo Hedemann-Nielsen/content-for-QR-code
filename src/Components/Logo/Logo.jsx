@@ -20,22 +20,13 @@ export const Logo = () => {
 					</h2>
 				</div>
 				<div className={style.linkContainer}>
-					<a
-						href="https://www.facebook.com/knitlig"
-						target="_blank"
-						rel="noopener noreferrer">
+					<a href="https://www.facebook.com/knitlig">
 						<FaFacebook className={style.link} />
 					</a>
-					<a
-						href="https://www.instagram.com/knitlig"
-						target="_blank"
-						rel="noopener noreferrer">
+					<a href="https://www.instagram.com/knitlig">
 						<FaInstagram className={style.link} />
 					</a>
-					<a
-						href="https://www.ravelry.com/designers/knitlig-2"
-						target="_blank"
-						rel="noopener noreferrer">
+					<a href="https://www.ravelry.com/designers/knitlig-2">
 						<FaRavelry className={style.link} />
 					</a>
 				</div>

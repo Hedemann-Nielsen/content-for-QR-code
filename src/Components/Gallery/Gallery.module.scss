@@ -1,10 +1,7 @@
 @use "../../Styles/Helpers/Mixinx" as *;
+@use "../../Styles/Helpers/variables" as *;
 
 .gallery {
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// justify-content: center;
 	margin-top: 50px;
 	.upperGallery {
 		display: grid;
@@ -28,7 +25,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				background-color: #0f101086;
+				background-color: $color-overlay;
 				border-radius: 8px;
 				overflow: hidden;
 				width: 0;
@@ -38,6 +35,9 @@
 			&:hover .overlay {
 				width: 100%;
 			}
+		}
+		.imgContainerLeft img {
+			object-position: bottom;
 		}
 	}
 	.loverGallery {
@@ -55,7 +55,7 @@
 			bottom: 0;
 			left: 0;
 			right: 0;
-			background-color: #0f101086;
+			background-color: $color-overlay;
 			border-radius: 8px;
 			overflow: hidden;
 			width: 0;
@@ -68,7 +68,8 @@
 	}
 	.text {
 		@include subtitle;
-		color: white;
+		color: $color-white;
+
 		position: absolute;
 		overflow: hidden;
 		top: 50%;

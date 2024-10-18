@@ -1,3 +1,5 @@
+@use "../../Styles/Helpers/variables" as *;
+
 .contactContainer {
 	display: flex;
 	justify-content: center;
@@ -14,14 +16,20 @@
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
-		background-color: #666;
+		background-color: $color-secundary-background;
+		transition: 0.2s ease-in-out;
+
+		&:hover {
+			transform: rotate(180deg);
+			scale: 1.1;
+		}
 	}
 	.contactCard {
 		text-align: center;
 		padding: 20px;
 
 		.contactInfo {
-			color: #666;
+			color: $color-gray;
 			div {
 				margin-top: 20px;
 				p:first-child {
@@ -29,7 +37,7 @@
 				}
 				p {
 					a {
-						color: #666;
+						color: $color-gray;
 						&:hover {
 							text-decoration: underline;
 						}

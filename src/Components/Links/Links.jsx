@@ -11,14 +11,14 @@ export const Links = () => {
 		<>
 			<a href="https://www.knitlig.dk" className={style.logoContainer}>
 				<img src={logo} alt="" />
-				<p>www.knitlig.dk</p>
+				<p className={style.hoverEffect}>www.knitlig.dk</p>
 				<span></span>
 			</a>
 			<a
 				href="https://www.instagram.com/knitlig"
 				className={style.logoContainer}>
 				<img src={instagramLogo} alt="" />
-				<p>instagram</p>
+				<p className={style.hoverEffect}>instagram</p>
 				<span></span>
 			</a>
 
@@ -26,14 +26,14 @@ export const Links = () => {
 				href="https://www.facebook.com/knitlig"
 				className={style.logoContainer}>
 				<img src={facebookLogo} alt="" />
-				<p>facebook</p>
+				<p className={style.hoverEffect}>facebook</p>
 				<span></span>
 			</a>
 			<a
 				href="https://www.ravelry.com/designers/knitlig-2"
 				className={style.logoContainer}>
 				<img src={ravelryLogo} alt="" />
-				<p>ravelry</p>
+				<p className={style.hoverEffect}>ravelry</p>
 				<span></span>
 			</a>
 		</>
