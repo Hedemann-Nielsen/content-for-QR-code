@@ -19,7 +19,9 @@ export const Footer = () => {
 	return (
 		<>
 			<div className={style.footer}>
-				<button onClick={openModal}>contact</button>
+				<button onClick={openModal} className={globalStyle.untyledBtn}>
+					contact
+				</button>
 				<p className={globalStyle.text}>
 					Copyright &copy; {currentYear} | KNITlig
 				</p>
