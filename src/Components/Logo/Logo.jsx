@@ -12,7 +12,9 @@ export const Logo = () => {
 	return (
 		<>
 			<div className={style.logo}>
-				<img src={logo} alt="logo" />
+				<a href="https://knitlig.dk">
+					<img src={logo} alt="logo" />
+				</a>
 				<div className={style.titleContainer}>
 					<h1 className={globalStyle.title}>KNITlig</h1>
 					<h2 className={globalStyle.subtitle}>
