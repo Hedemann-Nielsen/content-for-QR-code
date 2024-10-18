@@ -1,0 +1,23 @@
+.logoContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 50%;
+	margin-top: 10px;
+	border-radius: 8px;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 50px;
+	background-color: #8d8981;
+	padding: 10px;
+	color: black;
+	img {
+		width: 30px;
+		height: 30px;
+		// padding: 5px;
+		aspect-ratio: 1;
+		background-color: #8d8981;
+
+		object-fit: cover;
+	}
+}

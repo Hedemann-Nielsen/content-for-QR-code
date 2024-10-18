@@ -1,15 +1,20 @@
+import { useEffect, useState } from "react";
 import { RouterProvider } from "react-router-dom";
 import { routes } from "./Components/Routes/Routes";
-
-import "./App.css";
+import { Loader } from "./Components/Loader/Loader";
+import "./Styles/GlobalStyles.module.scss";
 
 function App() {
+	const [loading, setLoading] = useState(true);
+	useEffect(() => {
+		setTimeout(() => {
+			setLoading(false);
+		}, 2500);
+	}, []);
+
 	return (
 		<>
-			{/* Bruges til CreateBrowserRouyter uden loader */}
-			<RouterProvider router={routes} />;
-			{/* Bruges til CreateBrowserRouter med Loader */}
-			{/* <div>{loading ? <Loader /> : <RouterProvider router={routes} />}</div>; */}
+			<div>{loading ? <Loader /> : <RouterProvider router={routes} />}</div>
 		</>
 	);
 }

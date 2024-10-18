@@ -1,0 +1,7 @@
+@use "../../Styles/Helpers/variables" as *;
+.InnerWrapper {
+	display: flex;
+	margin: 0 38px;
+	flex-direction: column;
+	min-height: 100vh;
+}

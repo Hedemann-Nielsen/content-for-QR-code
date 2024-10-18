@@ -1,0 +1,29 @@
+.header {
+	width: 100%;
+	height: 80vh;
+	aspect-ratio: 1/1;
+	position: relative; // Gør det muligt for det absolutte element at positionere sig korrekt
+
+	img {
+		width: 100%;
+		height: 100%; // Gør billedet til at fylde hele headeren
+		object-fit: cover; // Bevarer billedets proportioner
+		// object-position: bottom;
+	}
+
+	// Tilføjelse af en pseudo-element til fading-effekt
+	&::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0) 0%,
+			#c7bdb9 80%
+		); // Juster farver og stop for at ændre fading
+		pointer-events: none; // Gør det muligt for klik at passere igennem
+	}
+}
