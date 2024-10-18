@@ -19,11 +19,16 @@ export const Footer = () => {
 	return (
 		<>
 			<div className={style.footer}>
-				<button onClick={openModal} className={globalStyle.untyledBtn}>
-					contact
-				</button>
+				<p onClick={openModal} className={globalStyle.untyledBtn}>
+					contakt
+				</p>
+			</div>
+			<div className={style.designer}>
 				<p className={globalStyle.text}>
 					Copyright &copy; {currentYear} | KNITlig
+				</p>
+				<p className={globalStyle.text}>
+					Page design by Tanja Hedemann Nielsen
 				</p>
 			</div>
 

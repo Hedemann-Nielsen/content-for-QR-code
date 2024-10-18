@@ -4,9 +4,12 @@
 	margin: 50px;
 	text-align: center;
 	a {
-		color: $color-black;
 		&:hover {
 			text-decoration: underline;
 		}
 	}
+}
+
+.designer {
+	padding-bottom: 5px;
 }

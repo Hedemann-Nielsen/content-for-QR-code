@@ -12,9 +12,6 @@
 		width: 100px;
 		height: 100px;
 		transition: 0.5s ease-in-out;
-		&:hover {
-			scale: 1.2;
-		}
 	}
 	.titleContainer {
 		margin-top: 50px;
@@ -31,9 +28,6 @@
 			.link {
 				font-size: 30px;
 			}
-		}
-		a:hover {
-			color: $color-secundary-background;
 		}
 	}
 }

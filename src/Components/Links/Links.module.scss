@@ -18,7 +18,6 @@
 	img {
 		width: 30px;
 		height: 30px;
-		// padding: 5px;
 		aspect-ratio: 1;
 		background-color: $color-secundary-background;
 		object-fit: cover;
@@ -26,32 +25,5 @@
 	p {
 		padding: 10px;
 		width: 150px;
-	}
-}
-.logoContainer:hover .hoverEffect::before {
-	width: 107%;
-}
-
-.hoverEffect {
-	width: 150px;
-	height: fit-content;
-	position: relative;
-	overflow: hidden;
-	text-align: center;
-	transition: 0.3s;
-	z-index: 1;
-	border-radius: 8px;
-	&::before {
-		content: "";
-		width: 0;
-		height: 300%;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%) rotate(20deg);
-		background: $color-background;
-		transition: 0.5s ease;
-		display: block;
-		z-index: -1;
 	}
 }
