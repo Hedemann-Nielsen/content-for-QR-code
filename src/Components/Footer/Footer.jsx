@@ -20,7 +20,7 @@ export const Footer = () => {
 		<>
 			<div className={style.footer}>
 				<p onClick={openModal} className={globalStyle.untyledBtn}>
-					contakt
+					contact
 				</p>
 			</div>
 			<div className={style.designer}>
